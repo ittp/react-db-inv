@@ -48,10 +48,9 @@ const config = require('./config/config');
 let FTF = async ({ form, data }) => (
   <Form {...form}>
     <FormBuilder {...data} />
-
-    <Button>OK</Button>
   </Form>
 );
+
 class App extends Component {
   constructor() {
     super(config);
