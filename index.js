@@ -90,8 +90,24 @@ class App extends Component {
       <React.Fragment>
         <div>
           <main>
-            {FTF}
-            {/* <FTF /> */}
+            <Table
+              columns={[
+                { key: 'id', dataIndex: 'id', title: 'ID' },
+                { key: 'uno', dataIndex: 'uno', title: 'УНО' },
+                { key: 'type', dataIndex: 'type', title: 'Тип' },
+                {
+                  key: 'manufacturer',
+                  dataIndex: 'manufacturer',
+                  title: 'Производитель',
+                },
+                { key: 'model', dataIndex: 'model', title: 'Модель' },
+                { key: 'serial', dataIndex: 'serial', title: 'Серийный #' },
+                { key: 'inventory', dataIndex: 'inventory', title: 'Инв.' },
+                { key: 'year', dataIndex: 'year', title: 'Год' },
+                { key: 'place', dataIndex: 'place', title: 'Место' },
+              ]}
+              dataSource={[{ key: 1, value: 21 }]}
+            />
           </main>
         </div>
       </React.Fragment>
