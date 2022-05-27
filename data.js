@@ -3071,7 +3071,7 @@ const data = [
 ];
 
 const columns = {
-  id: 'ID',
+  id: 'IS',
   key: 'УНО',
   type: 'Тип',
   manufacturer: 'Производитель',
